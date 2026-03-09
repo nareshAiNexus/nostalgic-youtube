@@ -51,7 +51,7 @@ This extension is so powerful, it's not even on the web store yet. You have to i
 1. **Clone or Download** this repository.
 
    ```bash
-   git clone https://github.com/yourusername/youtube-nostalgia.git
+    git clone https://github.com/nareshAiNexus/nostalgic-youtube.git
    ```
 
 2. Open your browser and punch in the developer portal:
