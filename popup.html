@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>YouTube Nostalgia Filter</title>
+  <link rel="stylesheet" href="popup.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="glass-panel">
+    <div class="header">
+      <div class="logo">
+        <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21.583 6.826a2.68 2.68 0 0 0-1.884-1.897C18.035 4.5 12 4.5 12 4.5s-6.035 0-7.699.429a2.68 2.68 0 0 0-1.884 1.897C2 8.5 2 12 2 12s0 3.5.417 5.174a2.68 2.68 0 0 0 1.884 1.897C6.035 19.5 12 19.5 12 19.5s6.035 0 7.699-.429a2.68 2.68 0 0 0 1.884-1.897C22 15.5 22 12 22 12s0-3.5-.417-5.174ZM9.8 14.8v-5.6l5.4 2.8-5.4 2.8Z" />
+        </svg>
+      </div>
+      <div>
+        <h1>Nostalgia Filter</h1>
+        <p class="subtitle">Rediscover the golden era</p>
+      </div>
+    </div>
+
+    <div class="control-card">
+      <label for="years" class="label-header">
+        <span>Filter videos older than</span>
+        <div class="value-badge"><span id="yearValue">5</span> yrs</div>
+      </label>
+
+      <div class="slider-container">
+        <input type="range" id="years" min="1" max="15" value="5" />
+        <div class="range-labels">
+          <span>1 Yr</span>
+          <span>15 Yrs</span>
+        </div>
+      </div>
+    </div>
+
+    <button id="apply">
+      <span>Apply Time Filter</span>
+      <svg class="icon-arrow" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+          clip-rule="evenodd" />
+      </svg>
+    </button>
+
+    <div class="status-bar">
+      <div class="pulse-dot"></div>
+      <span class="status-text">Clean Mode Active</span>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
